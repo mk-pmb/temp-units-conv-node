@@ -1,0 +1,39 @@
+{
+  "name": "temp-units-conv",
+  "version": "0.0.1",
+  "description": "Convert temperature units, lib + cli. Based on snippets from doug65536 and jesus666 on [#Node.js](irc://irc.freenode.net/Node.js).",
+  "main": "conversions.js",
+  "author": {
+    "name": "M.K."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mk-pmb/temp-units-conv-node.git"
+  },
+  "bugs": {
+    "url": "http://github.com/mk-pmb/temp-units-conv-node/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "temperature",
+    "heat",
+    "unit",
+    "unit of measurement",
+    "units",
+    "units of measurement",
+    "celsius",
+    "fahrenheit",
+    "kelvin"
+  ],
+  "bin": {
+    "tempconv": "./tempconv.cli.js"
+  }
+}
