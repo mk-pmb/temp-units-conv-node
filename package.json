@@ -1,7 +1,7 @@
 {
   "name": "temp-units-conv",
-  "version": "0.0.1",
-  "description": "Convert temperature units, lib + cli. Based on snippets by doug65536 and jesus666 on [#Node.js](irc://irc.freenode.net/Node.js).",
+  "version": "0.1.0",
+  "description": "Convert temperature units, lib + cli. Based on snippets by doug65536 and jesus666 on #Node.js",
   "main": "conversions.js",
   "author": {
     "name": "M.K."
