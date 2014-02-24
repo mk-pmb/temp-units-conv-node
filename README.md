@@ -3,7 +3,10 @@
 temp-units-conv
 ===============
 Convert temperature units, lib + cli.
-Based on snippets by doug65536 and jesus666 on [#Node.js](irc://irc.freenode.net/Node.js).
+
+![unit conversions](https://github.com/mk-pmb/temp-units-conv-node/raw/master/img/units-rccl-215px.png)
+
+Based on snippets by doug65536 and jesus666 on [FreeNode #Node.js](irc://irc.freenode.net/Node.js).
 
 simple
 ------
