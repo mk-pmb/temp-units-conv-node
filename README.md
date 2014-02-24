@@ -31,6 +31,9 @@ americanWaterBoil.unit.nameLong;  // 'degrees Fahrenheit'
 americanWaterBoil.unit.nameShort; // '°F'
 
 (new tuc.F(451)).toUnit('K').toString();  // '505.93 K'
+
+var tempFromString = new tuc.Temperature('0 K');
+tempFromString.toUnit('C').toString();    // '-273.15 °C'
 ```
 
 shelly
