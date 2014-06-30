@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Convert temperature units</title>
+  <meta http-equiv="Content-Script-Type" content="text/javascript">
+</head><body>
+
+<form action="none://" method="get" style="margin: 5em;">
+<p>Some temperature: <input type="text" id="orig" size="30"
+  value="451 &deg;F" style="text-align: right; padding-right: 1em;" />
+  <input type="submit" value="convert" /></p>
+<p id="results">(Results should be showing here if JavaScript is enabled.)</p>
+</form>
+
+<script>window.module = { exports: {} };</script>
+<script src="conversions.js"></script>
+<script src="tempconv.web.js"></script>
+
+</body></html>
