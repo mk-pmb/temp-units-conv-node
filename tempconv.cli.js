@@ -6,7 +6,7 @@
 
 var Temperature = require('./conversions').Temperature;
 
-process.argv.slice(2).forEach(function (arg) {
+function argln(arg) {
   var temp = new Temperature(arg);
   console.log(String(temp) +
     ['F', 'C', 'K'].map(function (destUnit) {
@@ -15,4 +15,7 @@ process.argv.slice(2).forEach(function (arg) {
       conv = ('function' === typeof conv ? conv.call(temp) : '?');
       return '\t= ' + String(conv);
     }).join(''));
-});
+}
+
+module.exports = argln;
+if (require.main === module) { process.argv.slice(2).forEach(argln); }

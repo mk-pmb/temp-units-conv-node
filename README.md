@@ -35,7 +35,7 @@ objective
 ```javascript
 var tuc = require('temp-units-conv'),
   waterboil = new tuc.Temperature(100, 'C');
-String(waterboil):  // '100.00 °C'
+String(waterboil);  // '100.00 °C'
 waterboil.unit;     // function Celsius(c) {…}
 
 var americanWaterBoil = waterboil.toF();
