@@ -1,6 +1,6 @@
 { "name": "temp-units-conv",
-  "version": "1.0.0",
-  "description": "Convert temperature units (Kelvin, Celsius, Fahrenheit), lib + CLI. Based on snippets by doug65536 and jesus666 on #Node.js",
+  "version": "1.0.1",
+  "description": "Convert temperature units (Kelvin, Celsius, Fahrenheit), lib + CLI. Based on snippets by doug65536 and jesus666 on #Node.js.",
   "keywords": [
     "temperature",
     "heat",

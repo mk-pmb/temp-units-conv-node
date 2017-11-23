@@ -4,17 +4,15 @@ temp-units-conv
 ===============
 <!--/#echo -->
 
+![unit conversions](https://github.com/mk-pmb/temp-units-conv-node/raw/master/img/units-rccl-215px.png)
+
 <!--#echo json="package.json" key="description" -->
 Convert temperature units (Kelvin, Celsius, Fahrenheit), lib + CLI. Based on
 snippets by doug65536 and jesus666 on #Node.js
 <!--/#echo -->
 
-Convert temperature units, lib + cli.
+Try it live:
 [Web Demo](https://mk-pmb.github.io/temp-units-conv-node/tempconv.web.html)
-
-![unit conversions](https://github.com/mk-pmb/temp-units-conv-node/raw/master/img/units-rccl-215px.png)
-
-Based on snippets by doug65536 and jesus666 on [FreeNode #Node.js](irc://irc.freenode.net/Node.js).
 
 
 simple
@@ -58,7 +56,6 @@ $ tempconv 100C 451F 0K
 100.00 °C       = 212.00 °F     = 373.15 K
 451.00 °F       = 232.78 °C     = 505.93 K
 0.00 K  = -459.67 °F    = -273.15 °C
-$
 ```
 
 
