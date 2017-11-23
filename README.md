@@ -1,7 +1,14 @@
--*- coding: utf-8, tab-width: 2 -*-
-
+﻿
+<!--#echo json="package.json" key="name" underline="=" -->
 temp-units-conv
 ===============
+<!--/#echo -->
+
+<!--#echo json="package.json" key="description" -->
+Convert temperature units (Kelvin, Celsius, Fahrenheit), lib + CLI. Based on
+snippets by doug65536 and jesus666 on #Node.js
+<!--/#echo -->
+
 Convert temperature units, lib + cli.
 [Web Demo](https://mk-pmb.github.io/temp-units-conv-node/tempconv.web.html)
 
@@ -9,8 +16,10 @@ Convert temperature units, lib + cli.
 
 Based on snippets by doug65536 and jesus666 on [FreeNode #Node.js](irc://irc.freenode.net/Node.js).
 
+
 simple
 ------
+
 ```javascript
 var tuc = require('temp-units-conv');
 tuc.c2f(100);     // 212
@@ -22,6 +31,7 @@ tuc.celsiusToKelvin(232.77);    // 505.9…
 
 objective
 ---------
+
 ```javascript
 var tuc = require('temp-units-conv'),
   waterboil = new tuc.Temperature(100, 'C');
@@ -42,6 +52,7 @@ tempFromString.toUnit('C').toString();    // '-273.15 °C'
 
 shelly
 ------
+
 ```bash
 $ tempconv 100C 451F 0K
 100.00 °C       = 212.00 °F     = 373.15 K
@@ -49,3 +60,16 @@ $ tempconv 100C 451F 0K
 0.00 K  = -459.67 °F    = -273.15 °C
 $
 ```
+
+
+
+
+
+<!--#toc stop="scan" -->
+
+
+License
+-------
+<!--#echo json="package.json" key=".license" -->
+MIT
+<!--/#echo -->
