@@ -2,7 +2,7 @@
 /* -*- tab-width: 2 -*- */
 'use strict';
 
-var tu = {}, eq = require('assert').strictEqual,
+var tu = {}, eq = require('assert').deepStrictEqual,
   cli_argln = require('../tempconv.cli.js');
 
 function isStr(x, no) { return (((typeof x) === 'string') || no); }
@@ -28,6 +28,8 @@ tu.test_cli = function (expected) {
     actual.push(ln);
     ln.split(/\s+/).slice(2).forEach(cli_argln);
   });
+  function multispace2tab(s) { return s.replace(/\s{2,}=/g, '\t='); }
+  eq(actual, expected.map(multispace2tab));
   console.log = origLog;
 };
 
