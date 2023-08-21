@@ -17,10 +17,10 @@
     try {
       temp = new Temperature(temp);
       temp = 'CFK'.replace(/\S/g, function (destUnit) {
-        var conv  = temp['to' + destUnit];
+        var conv = temp['to' + destUnit];
         // if (destUnit === temp.unit.id) { return ''; }
         conv = ('function' === typeof conv ? conv.call(temp) : '?');
-        return ' = ' + String(conv);
+        return ' =\u00A0' + String(conv).replace(/\s+/g, '\u00A0');
       });
     } catch (err) {
       return outDest.set(err);
